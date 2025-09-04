@@ -53,15 +53,15 @@ The **Cognitive Agent Architecture** defines five core layers + 4 extensions:
 - **Curriculum:**  
   Nine modules, aligned with the Cognitive Agent Architecture (CAA) framework, covering data quality, reliability, observability, orchestration, security, and ROI.
 
-- [Module 1: Context – From Data Chaos to Clarity](./module-01-context/overview.md)  
-- [Module 2: Behavior – Explicit, Inspectable Planning](./module-02-behavior/overview.md)  
-- [Module 3: Execution – Deterministic and Reliable Operations](./module-03-execution/overview.md)  
-- [Module 4: State – Persistence for Resilience](./module-04-state/overview.md)  
-- [Module 5: Collaboration – Human Oversight by Design](./module-05-collaboration/overview.md)  
-- [Module 6: Observability Bus](./module-06-observability/overview.md)  
-- [Module 7: Security – A First-Class Architectural Layer](./module-07-security/overview.md)  
-- [Module 8: Scaling, Performance & ROI](./module-08-scale/overview.md)  
-- [Module 9: Learning & Adaptation](./module-09-learning/overview.md)  
+- [Module 1: Context – From Data Chaos to Clarity](./curriculum/module-01-context/context_overview.md)  
+- [Module 2: Behavior – Explicit, Inspectable Planning](./curriculum/module-02-behavior/behavior_overview.md)  
+- [Module 3: Execution – Deterministic and Reliable Operations](./curriculum/module-03-execution/execution_overview.md)  
+- [Module 4: State – Persistence for Resilience](./curriculum/module-04-state/state_overview.md)  
+- [Module 5: Collaboration – Human Oversight by Design](./curriculum/module-05-collaboration/collaboration_overview.md)  
+- [Module 6: Observability Bus](./curriculum/module-06-observability/observability_overview.md)  
+- [Module 7: Security – A First-Class Architectural Layer](./curriculum/module-07-security/security_overview.md)  
+- [Module 8: Learning & Adaptation](./curriculum/module-08-learning/learning_overview.md)  
+- [Module 9: Scaling, Performance & ROI](./curriculum/module-09-scale/scale_overview.md)  
 
 
 - **RFCs (Requests for Comment):**  

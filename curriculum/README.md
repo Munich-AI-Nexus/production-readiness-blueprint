@@ -19,19 +19,19 @@ This curriculum extends CAA into a **practical, evolving playbook**:
 ## 🔹 The Modules
 
 ### Core CAA Layers
-1. [Context – From Data Chaos to Clarity](./module-01-context/overview.md)  
-2. [Behavior – Explicit, Inspectable Planning](./module-02-behavior/overview.md)  
-3. [Execution – Deterministic and Reliable Operations](./module-03-execution/overview.md)  
-4. [State – Persistence for Resilience](./module-04-state/overview.md)  
-5. [Collaboration – Human Oversight by Design](./module-05-collaboration/overview.md)  
+1. [Context – From Data Chaos to Clarity](./module-01-context/context_overview.md)  
+2. [Behavior – Explicit, Inspectable Planning](./module-02-behavior/behavior_overview.md)  
+3. [Execution – Deterministic and Reliable Operations](./module-03-execution/execution_overview.md)  
+4. [State – Persistence for Resilience](./module-04-state/state_overview.md)  
+5. [Collaboration – Human Oversight by Design](./module-05-collaboration/collaboration_overview.md)  
 
 ### Extended CAA Concerns
-6. [Observability Bus](./module-06-observability/overview.md)  
-7. [Security – A First-Class Architectural Layer](./module-07-security/overview.md)  
+6. [Observability Bus](./module-06-observability/observability_overview.md)  
+7. [Security – A First-Class Architectural Layer](./module-07-security/security_overview.md)  
 
 ### Lifecycle & Meta
-8. [Learning & Adaptation](./module-09-learning/overview.md)  
-9. [Scaling, Performance & ROI](./module-08-scale/overview.md)  
+8. [Learning & Adaptation](./module-08-learning/learning_overview.md)
+9. [Scaling, Performance & ROI](./module-09-scale/scale_overview.md)
 
 ---
 

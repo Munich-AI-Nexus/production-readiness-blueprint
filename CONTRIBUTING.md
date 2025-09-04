@@ -9,7 +9,7 @@ We maintain **high signal** via a review-first workflow. Read this once; follow 
 
 **A. Private intake (recommended for first-timers or sensitive topics)**
 - Use the private form → we help **refine / anonymize** → we publish a sanitized summary.
-- Intake form: [Submit privately](https://YOUR-FORM-LINK)  
+- Intake form: [Submit privately](https://forms.office.com/e/jS1ve678XN)  
 - After curation, maintainers create the public Issue/PR on your behalf (with your credit).
 
 **B. Public GitHub (for non-sensitive, already-shaped work)**
@@ -101,7 +101,7 @@ Levels we accept:
 - **Sanitized:** anonymized names, abstracted diagrams.  
 - **Summary-only:** we publish takeaways, no artifacts.
 
-If in doubt, use **private intake**: [Submit privately](https://YOUR-FORM-LINK).
+If in doubt, use **private intake**: [Submit privately](https://forms.office.com/e/jS1ve678XN).
 
 ---
 

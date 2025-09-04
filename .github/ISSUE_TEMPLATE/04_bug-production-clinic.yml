@@ -1,0 +1,29 @@
+name: Production-Readiness Review Request
+description: Submit your project or system for a production-readiness review.
+title: "Review Request: [System / Project Name]"
+labels: ["type:review", "status:triage"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: One-paragraph summary of the system, domain, or goal.
+  - type: textarea
+    id: challenge
+    attributes:
+      label: Biggest Challenge
+      description: What production issue are you facing (e.g. scaling, reliability, security)?
+    validations:
+      required: true
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture Snapshot
+      description: High-level architecture (optional diagram link).
+  - type: checkboxes
+    id: confidentiality
+    attributes:
+      label: Confidentiality
+      options:
+        - label: Safe to share publicly
+        - label: Needs anonymization before publishing

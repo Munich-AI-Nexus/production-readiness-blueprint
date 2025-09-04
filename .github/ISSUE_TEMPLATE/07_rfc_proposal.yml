@@ -1,0 +1,49 @@
+name: RFC Proposal
+description: Propose a new architectural pattern, best practice, or standard.
+title: "RFC: [Short Title]"
+labels: ["type:rfc", "status:triage"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One-sentence overview of the RFC.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does this solve? Why is this relevant to production AI?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed Approach
+      description: Outline the architecture, pattern, or process being proposed.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What else could solve this? Why is this approach better?
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Limitations
+      description: Potential drawbacks, risks, or open questions.
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related Module
+      description: Which part of the curriculum this affects?
+      options:
+        - Module 1: Context
+        - Module 2: Behavior
+        - Module 3: Execution
+        - Module 4: State
+        - Module 5: Collaboration
+        - Module 6: Observability
+        - Module 7: Security
+        - Module 8: Scale & ROI
+        - Module 9: Learning & Adaptation

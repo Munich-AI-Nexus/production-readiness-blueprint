@@ -1,0 +1,17 @@
+name: Link Check
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+permissions:
+  contents: read
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --exclude-mail --max-concurrency 8 '**/*.md'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

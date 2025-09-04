@@ -1,0 +1,25 @@
+name: Issue Triage
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+  repository-projects: write
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add status:triage label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: status:triage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # OPTIONAL: add to GitHub Projects (v2). Set your org project URL in secret PROJECT_URL.
+      - name: Add issue to Project
+        if: ${{ secrets.PROJECT_URL != '' }}
+        uses: actions/add-to-project@v0.6.1
+        with:
+          project-url: ${{ secrets.PROJECT_URL }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}

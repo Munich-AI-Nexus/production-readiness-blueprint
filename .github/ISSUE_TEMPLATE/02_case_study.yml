@@ -1,14 +1,8 @@
-name: Case Study Proposal
-description: Submit a project for live review and inclusion in the blueprint.
+name: Case Study Submission
+description: Submit a project for live review or as a case study for the Blueprint.
+title: "Case Study: [Project Title or Anonymized Label]"
 labels: ["type:case-study", "status:triage"]
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Project Name
-      description: Name or anonymized title.
-    validations:
-      required: true
   - type: textarea
     id: context
     attributes:
@@ -17,22 +11,24 @@ body:
   - type: textarea
     id: architecture
     attributes:
-      label: Overview
-      description: Describe core components (attach diagram links if safe to share).
+      label: Architecture Overview
+      description: Describe core components (attach a diagram link if possible).
   - type: textarea
-    id: key_decision
+    id: decision
     attributes:
       label: Key Architectural Decision
-      description: One important trade-off or decision.
+      description: One important trade-off or decision made.
   - type: textarea
-    id: challenge
+    id: challenges
     attributes:
       label: Hardest Challenge
       description: What you’d like the community to focus on.
     validations:
       required: true
-  - type: textarea
+  - type: checkboxes
     id: confidentiality
     attributes:
       label: Confidentiality
-      description: Note if anonymization or redaction is required.
+      options:
+        - label: Safe to publish as-is
+        - label: Needs anonymization before publishing

@@ -1,0 +1,37 @@
+name: Event Notes
+description: Capture agenda, key takeaways, and resources from a Nexus event.
+title: "Event Notes: [Event Name & Date]"
+labels: ["type:event", "status:in-progress"]
+body:
+  - type: input
+    id: event_date
+    attributes:
+      label: Date
+      description: YYYY-MM-DD
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Venue or virtual link
+  - type: textarea
+    id: agenda
+    attributes:
+      label: Agenda
+      description: Copy agenda or bullet list of sessions.
+  - type: textarea
+    id: highlights
+    attributes:
+      label: Highlights
+      description: Key moments, speaker points, or crowd discussions.
+  - type: textarea
+    id: takeaways
+    attributes:
+      label: Key Takeaways
+      description: Summarize top lessons or insights.
+  - type: textarea
+    id: links
+    attributes:
+      label: Links & Resources
+      description: Add links to slides, recordings, or related materials.

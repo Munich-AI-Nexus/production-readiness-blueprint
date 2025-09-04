@@ -1,0 +1,52 @@
+name: Sync PR Status with Issues
+on:
+  pull_request:
+    types: [opened, edited, reopened, closed]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find linked issues (via keywords)
+        id: linked
+        uses: tj-actions/issue-links@v12
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: When PR opened → mark linked issues as in-progress
+        if: ${{ github.event.action != 'closed' && steps.linked.outputs.issues != '' }}
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: status:in-progress
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          ISSUES: ${{ steps.linked.outputs.issues }}
+
+      - name: Remove triage when in-progress
+        if: ${{ github.event.action != 'closed' && steps.linked.outputs.issues != '' }}
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: status:triage
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          ISSUES: ${{ steps.linked.outputs.issues }}
+
+      - name: When PR merged → mark issues as merged
+        if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true && steps.linked.outputs.issues != '' }}
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: status:merged
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          ISSUES: ${{ steps.linked.outputs.issues }}
+
+      - name: When PR merged → remove in-progress
+        if: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true && steps.linked.outputs.issues != '' }}
+        uses: actions-ecosystem/action-remove-labels@v1
+        with:
+          labels: status:in-progress
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          ISSUES: ${{ steps.linked.outputs.issues }}

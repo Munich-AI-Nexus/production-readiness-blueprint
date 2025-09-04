@@ -1,0 +1,22 @@
+name: Tooling Request
+description: Suggest a tool, library, or infrastructure component to evaluate.
+title: "Tooling Request: [Tool / Category]"
+labels: ["type:tooling", "status:triage"]
+body:
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name
+      description: Name + link (if available)
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case
+      description: What problem does this tool solve? Which CAA module does it support?
+  - type: textarea
+    id: experience
+    attributes:
+      label: Experience / Questions
+      description: Any initial results, blockers, or questions for the community?

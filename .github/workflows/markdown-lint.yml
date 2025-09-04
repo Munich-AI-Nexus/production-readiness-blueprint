@@ -1,0 +1,14 @@
+name: Markdown Lint
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+permissions:
+  contents: read
+jobs:
+  mdlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i -g markdownlint-cli@0.39.0
+      - run: markdownlint '**/*.md' --ignore node_modules

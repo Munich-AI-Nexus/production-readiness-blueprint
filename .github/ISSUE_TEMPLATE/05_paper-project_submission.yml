@@ -1,0 +1,31 @@
+name: Paper / Project Submission
+description: Submit a research paper, repo, or project for inclusion or discussion.
+title: "Paper/Project: [Title]"
+labels: ["type:resource", "status:triage"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Paper/project title and link
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related Module
+      options:
+        - Module 1: Context
+        - Module 2: Behavior
+        - Module 3: Execution
+        - Module 4: State
+        - Module 5: Collaboration
+        - Module 6: Observability
+        - Module 7: Security
+        - Module 8: Scale & ROI
+        - Module 9: Learning & Adaptation
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance
+      description: Why this is important, what it adds to production readiness.

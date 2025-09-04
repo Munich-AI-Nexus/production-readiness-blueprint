@@ -1,0 +1,27 @@
+name: Question
+description: Ask a focused question to the community.
+title: "Q: [Short Question]"
+labels: ["type:question", "status:triage"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Be specific. Avoid “general discussion” — frame as a problem or decision point.
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related Module
+      options:
+        - General
+        - Module 1: Context
+        - Module 2: Behavior
+        - Module 3: Execution
+        - Module 4: State
+        - Module 5: Collaboration
+        - Module 6: Observability
+        - Module 7: Security
+        - Module 8: Scale & ROI
+        - Module 9: Learning & Adaptation

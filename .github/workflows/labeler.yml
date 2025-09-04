@@ -1,0 +1,29 @@
+# Modules
+module:context:
+  - '(?i)\b(rag|retrieval|knowledge graph|ontology|schema|context store|data contract)\b'
+module:behavior:
+  - '(?i)\b(planner|planning|policy|decision tree|reasoning|chain of thought|actor)\b'
+module:execution:
+  - '(?i)\b(orchestrator|workflow|executor|pydantic|json schema|retry|fallback|tool call)\b'
+module:state:
+  - '(?i)\b(state|checkpoint|session|rollback|versioning|persistence)\b'
+module:collaboration:
+  - '(?i)\b(hitl|human-in-the-loop|approval|escalation|feedback|ux)\b'
+module:observability:
+  - '(?i)\b(observability|tracing|opentelemetry|metrics|logging|langfuse)\b'
+module:security:
+  - '(?i)\b(auth|authorization|rbac|abac|secrets|encryption|gdpr|soc2|isolation|sandbox)\b'
+module:scale-roi:
+  - '(?i)\b(scale|throughput|latency|cost|vllm|quantization|roi|business case)\b'
+module:learning:
+  - '(?i)\b(retraining|evaluation|regression test|drift|active learning|feedback loop)\b'
+
+# Types (fallback if template labels missing)
+type:tooling:
+  - '(?i)\b(tool|library|sdk|framework|platform)\b'
+type:resource:
+  - '(?i)\b(paper|arxiv|repo|project|reference)\b'
+type:review:
+  - '(?i)\b(production-readiness review|bug clinic|design review)\b'
+type:question:
+  - '^\s*Q:'

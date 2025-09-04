@@ -1,12 +1,19 @@
-name: Auto Label
+name: Auto Label Issues
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, reopened]
+permissions:
+  contents: read
+  issues: write
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: github/issue-labeler@v3
         with:
           configuration-path: .github/labeler.yml
-          sync-labels: true
+          not-before: 2020-01-01
+          sync-labels: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

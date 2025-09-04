@@ -8,6 +8,8 @@ permissions:
 jobs:
   triage:
     runs-on: ubuntu-latest
+    env:
+      PROJECT_URL: ${{ secrets.PROJECT_URL }}  # bind once
     steps:
       - name: Add status:triage label
         uses: actions-ecosystem/action-add-labels@v1
@@ -16,10 +18,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # OPTIONAL: add to GitHub Projects (v2). Set your org project URL in secret PROJECT_URL.
       - name: Add issue to Project
-        if: ${{ secrets.PROJECT_URL != '' }}
+        if: ${{ env.PROJECT_URL != '' }}        # check env, not secrets
         uses: actions/add-to-project@v0.6.1
         with:
-          project-url: ${{ secrets.PROJECT_URL }}
+          project-url: ${{ env.PROJECT_URL }}
           github-token: ${{ secrets.GITHUB_TOKEN }}

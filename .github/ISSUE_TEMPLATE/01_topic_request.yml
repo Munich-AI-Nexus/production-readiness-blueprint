@@ -1,0 +1,36 @@
+name: Topic Request
+description: Suggest a topic for future modules, events, or RFCs.
+labels: ["type:topic-request", "status:triage"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: One line describing the topic or question.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this important?
+      description: Briefly explain pain points, relevance, or impact.
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Related Module
+      description: Which part of the curriculum this fits in.
+      options:
+        - Module 1: Data & Context
+        - Module 2: Reliable Agents
+        - Module 3: Human Interface
+        - Module 4: Security & Sovereignty
+        - Module 5: Orchestration
+        - Module 6: Scale & ROI
+        - Unsure
+  - type: textarea
+    id: desired_outcome
+    attributes:
+      label: Desired outcome
+      description: What should a session or resource deliver?

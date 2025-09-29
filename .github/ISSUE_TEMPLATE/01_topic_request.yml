@@ -2,13 +2,6 @@ name: Topic Request
 description: Suggest a topic for future modules, events, or RFCs.
 labels: ["type:topic-request", "status:triage"]
 body:
-  - type: input
-    id: title
-    attributes:
-      label: Title
-      description: One line describing the topic or question.
-    validations:
-      required: true
   - type: textarea
     id: why
     attributes:

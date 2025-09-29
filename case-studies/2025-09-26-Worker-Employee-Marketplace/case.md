@@ -69,3 +69,17 @@ graph LR
       - `Admin`: Manage users/CVs.
     -**Tool**: supabase
 
+
+### **Why This Matters Beyond This Project**
+This use case is a **microcosm of broader AI challenges**:
+- **Stateless → Stateful**: A problem for **any** user-facing AI system.
+- **GDPR in LLMs**: A **non-negotiable** for EU-based projects.
+- **Permission Models**: Critical for **multi-tenant systems** (e.g., marketplaces, SaaS).
+
+**If you’re working on**:
+- A **chatbot** that needs user accounts.
+- A **marketplace** with roles (buyers/sellers).
+- A **GDPR-compliant LLM pipeline**.
+
+**This case study is for you.** Contribute your insights or fork the repo to adapt these solutions!
+

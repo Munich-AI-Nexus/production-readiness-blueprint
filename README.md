@@ -1,7 +1,9 @@
 # Production Readiness Blueprint
 
+**appliedAI Developers Meetup - The Munich AI Nexus**
+
 A practitioner-led, open-source **playbook for building production-grade AI systems**.  
-Created and maintained by the [Munich AI Nexus](https://github.com/munich-ai-nexus),  
+Created and maintained by the [appliedAI Developers Meetup - Munich AI Nexus](https://github.com/munich-ai-nexus),  
 a community of architects, engineers, and researchers solving **real-world AI challenges**.
 
 It is built on the **Cognitive Agent Architecture (CAA)** — a reference model for designing production-grade AI systems.  
@@ -20,7 +22,7 @@ We’re building this together, session by session, turning **case studies and d
 ---
 
 ## 🔹 The CAA Layers
-The **Cognitive Agent Architecture** defines five core layers + 4 extensions:
+The **[Cognitive Agent Architecture](github.com/artiquare/cognitive-agentic-architecture)** defines five core layers + 4 extensions:
 
 1. **Context** – Transform raw data into structured knowledge.  
 2. **Behavior** – Make planning explicit, inspectable, and auditable.  
@@ -117,9 +119,9 @@ See [GOVERNANCE.md](./GOVERNANCE.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 ---
 
 ## 🔗 Links
-- [Munich AI Nexus Website](https://example.com) (TBD)
-- [Slack Community](https://example.com)  
-- [Events & Meetups](https://example.com)  
+- [AppliedAI Developers Community](https://www.appliedai-institute.de/en/community) 
+- [Slack Community](#)  (TBD)
+- [Events & Meetups](https://luma.com/user/appliedaidevs)  
 
 ---
 

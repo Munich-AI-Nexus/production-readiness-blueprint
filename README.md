@@ -3,7 +3,7 @@
 **appliedAI Developers Meetup - The Munich AI Nexus**
 
 A practitioner-led, open-source **playbook for building production-grade AI systems**.  
-Created and maintained by the [appliedAI Developers Meetup - Munich AI Nexus](https://github.com/munich-ai-nexus),  
+Created and maintained by the [appliedAI Developers](https://github.com/munich-ai-nexus),  
 a community of architects, engineers, and researchers solving **real-world AI challenges**.
 
 It is built on the **Cognitive Agent Architecture (CAA)** — a reference model for designing production-grade AI systems.  

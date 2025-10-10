@@ -119,8 +119,8 @@ See [GOVERNANCE.md](./GOVERNANCE.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 ---
 
 ## 🔗 Links
-- [AppliedAI Developers Community](https://www.appliedai-institute.de/en/community) 
-- [Slack Community](#)  (TBD)
+- [AppliedAI Developers Community](https://www.linkedin.com/company/appliedai-developers/?viewAsMember=true) 
+- [Slack Community](https://share-eu1.hsforms.com/16DV6juahTPeVme90bZLvqA2d7pp1)
 - [Events & Meetups](https://luma.com/user/appliedaidevs)  
 
 ---

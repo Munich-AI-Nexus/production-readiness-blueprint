@@ -22,7 +22,7 @@ We’re building this together, session by session, turning **case studies and d
 ---
 
 ## 🔹 The CAA Layers
-The **[Cognitive Agent Architecture](github.com/artiquare/cognitive-agentic-architecture)** defines five core layers + 4 extensions:
+The **[Cognitive Agent Architecture](https://github.com/artiquare/cognitive-agentic-architecture)** defines five core layers + 4 extensions:
 
 1. **Context** – Transform raw data into structured knowledge.  
 2. **Behavior** – Make planning explicit, inspectable, and auditable.  

@@ -1,6 +1,6 @@
 # Production Readiness Blueprint
 
-A practitioner-led, open-source playbook for building production-grade AI systems — developed by the [Munich AI Nexus](https://github.com/Munich-AI-Nexus).
+A practitioner-led, open-source playbook for building production-grade AI systems — developed by the [Munich AI Nexus](https://github.com/Munich-AI-Nexus), a practitioner group of the appliedAI Developers community.
 
 This blueprint distills proven patterns, case studies, and RFCs into a living technical curriculum for engineers turning prototypes into reliable systems.
 

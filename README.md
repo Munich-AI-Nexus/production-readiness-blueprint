@@ -109,3 +109,9 @@ See [GOVERNANCE.md](./GOVERNANCE.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 ## 🔹 Guiding Principle
 > “The era of AI demos is over.  
 > The Production Readiness Blueprint turns **hacks into systems** and **prototypes into production.**”  
+
+---
+
+## 📜 License
+Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).  
+Code snippets and templates are licensed under [MIT](./LICENSE).

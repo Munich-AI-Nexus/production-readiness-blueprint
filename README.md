@@ -1,28 +1,37 @@
 # Production Readiness Blueprint
 
-**appliedAI Developers Meetup - The Munich AI Nexus**
+A practitioner-led, open-source playbook for building production-grade AI systems — developed by the [Munich AI Nexus](https://github.com/Munich-AI-Nexus), a practitioner group of the appliedAI Developers community.
 
-A practitioner-led, open-source **playbook for building production-grade AI systems**.  
-Created and maintained by the [appliedAI Developers](https://github.com/munich-ai-nexus),  
-a community of architects, engineers, and researchers solving **real-world AI challenges**.
-
-It is built on the **Cognitive Agent Architecture (CAA)** — a reference model for designing production-grade AI systems.  
-This curriculum translates CAA into **practical modules, case studies, and architectural patterns** that evolve through community input.
-
----
+This blueprint distills proven patterns, case studies, and RFCs into a living technical curriculum for engineers turning prototypes into reliable systems.
 
 ## 📖 What This Is
-Most AI pilots never reach production. This blueprint is a **living knowledge base** of patterns, anti-patterns, and hard-won lessons for building **reliable, observable, and scalable AI systems**.
+Most AI pilots never reach production. 
+The Production Readiness Blueprint (PRB) captures the patterns, anti-patterns, and hard-won lessons for building reliable, observable, and scalable AI systems.
 
-CAA provides a **layered architecture** that makes AI systems **auditable, controllable, and extensible**.  
-The Nexus community is turning this architecture into a **living playbook** through real-world discussions, case studies, and RFCs.
-
-We’re building this together, session by session, turning **case studies and discussions** from the Munich AI Nexus into actionable resources for the wider AI community.
+It evolves session by session through the Munich AI Nexus — where practitioners review real-world projects, debate designs, and codify what works.
 
 ---
 
-## 🔹 The CAA Layers
-The **[Cognitive Agent Architecture](https://github.com/artiquare/cognitive-agentic-architecture)** defines five core layers + 4 extensions:
+**Curriculum:**  
+  Nine modules cover the critical dimensions of production-grade AI systems — from data quality and reliability to observability, orchestration, and ROI.
+
+- [Module 1: Context – From Data Chaos to Clarity](./curriculum/module-01-context/context_overview.md)  
+- [Module 2: Behavior – Explicit, Inspectable Planning](./curriculum/module-02-behavior/behavior_overview.md)  
+- [Module 3: Execution – Deterministic and Reliable Operations](./curriculum/module-03-execution/execution_overview.md)  
+- [Module 4: State – Persistence for Resilience](./curriculum/module-04-state/state_overview.md)  
+- [Module 5: Collaboration – Human Oversight by Design](./curriculum/module-05-collaboration/collaboration_overview.md)  
+- [Module 6: Observability Bus](./curriculum/module-06-observability/observability_overview.md)  
+- [Module 7: Security – A First-Class Architectural Layer](./curriculum/module-07-security/security_overview.md)  
+- [Module 8: Learning & Adaptation](./curriculum/module-08-learning/learning_overview.md)  
+- [Module 9: Scaling, Performance & ROI](./curriculum/module-09-scale/scale_overview.md)  
+
+---
+
+## 🧠 Architectural Foundation – The Cognitive Agent Architecture (CAA)
+
+The curriculum is organized around the **[Cognitive Agent Architecture](https://github.com/artiquare/cognitive-agentic-architecture)**, a layered reference model for designing auditable, controllable, and extensible AI systems.
+
+The CAA defines five core layers + 4 extensions:
 
 1. **Context** – Transform raw data into structured knowledge.  
 2. **Behavior** – Make planning explicit, inspectable, and auditable.  
@@ -52,29 +61,6 @@ The **[Cognitive Agent Architecture](https://github.com/artiquare/cognitive-agen
     └─ .github/             # Contribution templates and workflows
 
 
-- **Curriculum:**  
-  Nine modules, aligned with the Cognitive Agent Architecture (CAA) framework, covering data quality, reliability, observability, orchestration, security, and ROI.
-
-- [Module 1: Context – From Data Chaos to Clarity](./curriculum/module-01-context/context_overview.md)  
-- [Module 2: Behavior – Explicit, Inspectable Planning](./curriculum/module-02-behavior/behavior_overview.md)  
-- [Module 3: Execution – Deterministic and Reliable Operations](./curriculum/module-03-execution/execution_overview.md)  
-- [Module 4: State – Persistence for Resilience](./curriculum/module-04-state/state_overview.md)  
-- [Module 5: Collaboration – Human Oversight by Design](./curriculum/module-05-collaboration/collaboration_overview.md)  
-- [Module 6: Observability Bus](./curriculum/module-06-observability/observability_overview.md)  
-- [Module 7: Security – A First-Class Architectural Layer](./curriculum/module-07-security/security_overview.md)  
-- [Module 8: Learning & Adaptation](./curriculum/module-08-learning/learning_overview.md)  
-- [Module 9: Scaling, Performance & ROI](./curriculum/module-09-scale/scale_overview.md)  
-
-
-- **RFCs (Requests for Comment):**  
-  Formal proposals for patterns, tools, and design decisions, written collaboratively.
-
-- **Case Studies:**  
-  Projects reviewed during live sessions, anonymized or redacted if needed, distilled into reusable lessons.
-
-- **Events:**  
-  Summaries and artifacts from Munich AI Nexus sessions.
-
 ---
 
 ## 🛠️ How to Participate
@@ -101,11 +87,6 @@ The **[Cognitive Agent Architecture](https://github.com/artiquare/cognitive-agen
 - Create a **neutral, practitioner-led resource** for engineers and architects worldwide.  
 - Promote **sovereignty, security, and scalability** in AI system design.
 
-
-## 🔹 Guiding Principle
-> “The era of AI demos is over.  
-> The Production Readiness Blueprint turns **hacks into systems** and **prototypes into production.**”  
-
 ---
 
 ## 📜 Governance
@@ -125,11 +106,12 @@ See [GOVERNANCE.md](./GOVERNANCE.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 
 ---
 
-## 📜 License
-Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).  
-Code snippets and templates are licensed under [MIT](./LICENSE).
+## 🔹 Guiding Principle
+> “The era of AI demos is over.  
+> The Production Readiness Blueprint turns **hacks into systems** and **prototypes into production.**”  
 
 ---
 
-> “The era of AI demos is over. Let’s build the systems that work.”
-
+## 📜 License
+Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).  
+Code snippets and templates are licensed under [MIT](./LICENSE).

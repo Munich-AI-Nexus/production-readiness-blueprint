@@ -98,6 +98,8 @@ The group explored retrieval, ranking strategies, metadata governance, and conte
 - Strong participation across all contributions.  
 - High engagement during the challenge discussion.  
 - Broad representation of applied, research, and systems perspectives.  
+- Evaluation tooling (RAGAS, LLM-as-a-judge, Langfuse, TruLens) was discussed explicitly.
+  The shared conclusion: no tool currently provides reliable, transparent, domain-agnostic, component-level evaluation for context pipelines.
 
 ---
 

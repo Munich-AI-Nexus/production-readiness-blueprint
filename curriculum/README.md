@@ -1,7 +1,7 @@
 # Curriculum – The Production Readiness Blueprint
 
 The **Production Readiness Blueprint** is the structured curriculum of the Munich AI Nexus.  
-It is based on the [Cognitive Agent Architecture (CAA)](https://github.com/cognitive-agentic-architecture), a reference model authored prior to the Nexus, and refined here through **case studies, RFCs, and practitioner debate**.
+It is based on the Cognitive Agent Architecture (CAA), a reference model authored prior to the Nexus, and refined here through **case studies, RFCs, and practitioner debate**.
 
 ---
 
@@ -43,7 +43,7 @@ This curriculum extends CAA into a **practical, evolving playbook**:
 ---
 
 ## 🔹 Relationship to CAA
-- The formal **CAA specification** lives in its [own repository](https://github.com/cognitive-agentic-architecture).  
+- The formal **CAA specification** lives in its [own repository](https://github.com/artiquare/cognitive-agentic-architecture).  
 - The Blueprint is the **curriculum and knowledge base** that applies CAA in practice.  
 - Over time, validated case studies and patterns here may feed back into the CAA spec itself.  
 

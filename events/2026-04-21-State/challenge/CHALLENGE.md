@@ -1,6 +1,6 @@
 # Challenge: Make This Workflow Resumable and Debuggable
 
----
+
 
 ## 🧾 Scenario
 
@@ -13,7 +13,8 @@ You are building an AI-powered document processing pipeline:
 
 This system is already deployed.
 
----
+
+
 
 ## ⚠️ Problem
 
@@ -32,7 +33,28 @@ When something fails, you don’t know:
 - where the failure occurred
 - how to resume safely
 
----
+
+### 🔄 Current Workflow
+
+```mermaid
+flowchart TD
+    A[Input Document] --> B[1. Parse Document]
+    B --> C[2. Extract Entities<br/>LLM / Non-deterministic]
+    C --> D[3. Enrich Entities<br/>External API / Can fail]
+    D --> E[4. Generate Output]
+
+    C -. may return incomplete or inconsistent entities .-> F[Failure / Invalid Intermediate State]
+    D -. intermittent API failure .-> G[Failure / Workflow Stops]
+
+    F --> H[No persisted state]
+    G --> H
+
+    H --> I[Cannot inspect intermediate data]
+    H --> J[Cannot safely resume]
+    H --> K[Cannot replay or compare runs]
+```
+
+
 
 ## 🎯 Your Task
 
@@ -43,7 +65,28 @@ Design a **state layer** that makes this system:
 - reproducible across runs
 - consistent across multi-step execution
 
----
+
+### 🎯 Desired Design Goal
+
+```mermaid
+flowchart TD
+    A[Input Document] --> B[1. Parse Document]
+    B --> S1[(Persist Step State)]
+    S1 --> C[2. Extract Entities<br/>LLM / Non-deterministic]
+    C --> S2[(Persist Step State)]
+    S2 --> D[3. Enrich Entities<br/>External API / Can fail]
+    D --> S3[(Persist Step State)]
+    S3 --> E[4. Generate Output]
+    E --> S4[(Persist Final State)]
+
+    D -. failure .-> R[Resume from last valid checkpoint]
+    C -. inconsistent output .-> V[Inspect state + validate contracts]
+    R --> S2
+    V --> S2
+```
+
+
+
 
 ## 🧠 Design Questions
 
@@ -54,7 +97,7 @@ Design a **state layer** that makes this system:
 - logs vs structured state?
 - intermediate reasoning?
 
----
+
 
 ### 2. Where do you persist it?
 
@@ -63,7 +106,8 @@ Design a **state layer** that makes this system:
 - event log?
 - memory + fallback?
 
----
+
+
 
 ### 3. How do you resume execution?
 
@@ -72,7 +116,7 @@ Design a **state layer** that makes this system:
 - replay from a checkpoint?
 - skip completed steps?
 
----
+
 
 ### 4. How do you debug the system?
 
@@ -80,7 +124,7 @@ Design a **state layer** that makes this system:
 - trace execution history?
 - compare multiple runs?
 
----
+
 
 ### 5. How do you handle failures?
 
@@ -88,7 +132,7 @@ Design a **state layer** that makes this system:
 - inconsistent state?
 - retries with non-deterministic steps?
 
----
+
 
 ### 6. What tradeoffs do you accept?
 
@@ -96,7 +140,8 @@ Design a **state layer** that makes this system:
 - consistency vs performance
 - full replay vs incremental recovery
 
----
+
+
 
 ## 🔁 Extension (Advanced)
 
@@ -108,7 +153,8 @@ The workflow evolves over time:
 
 👉 How do you handle **state versioning**?
 
----
+
+
 
 ## 📢 Output
 
@@ -119,6 +165,7 @@ Be ready to discuss:
 - tradeoffs you accepted
 - failure modes your system still has
 
+
 ---
 
 ## 💡 Reminder
@@ -126,5 +173,3 @@ Be ready to discuss:
 This is not about writing code.
 
 This is about designing **reliable AI systems**.
-
----

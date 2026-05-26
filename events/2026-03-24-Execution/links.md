@@ -1,8 +1,8 @@
 # Munich AI Nexus – Execution — Deterministic and Reliable Operations
 
 ## Slides & Recordings
-- [Speaker 1 slides](link)
-- [Speaker 2 slides](link)
+- [Host slides](../2026-03-24-Execution/slides/Host_slides__nexus-module-3.pdf)
+- [Speaker 2 slides](../2026-03-24-Execution/slides/Talk2_Agentic%20AI%20on%20AWS%20Implementation%20FCD.pdf)
 
 ## Related Resources
 - [The Context Development Lifecycle: Optimizing Context for AI Coding Agents, Patrick Debois](https://tessl.io/blog/context-development-lifecycle-better-context-for-ai-coding-agents/)

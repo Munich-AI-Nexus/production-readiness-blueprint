@@ -1,8 +1,7 @@
 # Munich AI Nexus – Kickoff Event Links
 
 ## Slides & Recordings
-- [Speaker 1 slides](link)
-- [Speaker 2 slides](link)
+- [Host slides](../2026-01-28-Behavior/slides/host-slides-nexus-module-2.pdf))
 
 ## Related Resources
 - [Relevant GitHub issues or PRs]

@@ -1,6 +1,6 @@
 # Production Readiness Blueprint
 
-A practitioner-led, open-source playbook for building production-grade AI systems — developed by the [Munich AI Nexus](https://github.com/Munich-AI-Nexus), a practitioner group of the appliedAI Developers community.
+A practitioner-led, open-source playbook for building production-grade AI systems — developed by the [Munich AI Nexus](https://github.com/Munich-AI-Nexus), a practitioner group of the appliedAI Developers community. Events Calendar is on [Luma](https://luma.com/appliedaidevelopers)
 
 This blueprint distills proven patterns, case studies, and RFCs into a living technical curriculum for engineers turning prototypes into reliable systems.
 
@@ -102,7 +102,7 @@ See [GOVERNANCE.md](./GOVERNANCE.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) fo
 ## 🔗 Links
 - [AppliedAI Developers Community](https://www.linkedin.com/company/appliedai-developers/?viewAsMember=true) 
 - [Slack Community](https://share-eu1.hsforms.com/16DV6juahTPeVme90bZLvqA2d7pp1)
-- [Events & Meetups](https://luma.com/user/appliedaidevs)  
+- [Events & Meetups](https://luma.com/appliedaidevelopers)  
 
 ---
 
